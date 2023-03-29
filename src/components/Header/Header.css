@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+  padding: 0 0 100px 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+  margin: 52px 0 0 85px;
+  padding: 0;
+}
+
+.menu-item {
+  margin: 0;
+  padding: 0;
+}
+.menu-item:hover {
+  color: #3322F5;
+  cursor: pointer;
+}
+
+.contacts-button {
+  background-color: #302F2F;
+  color: #EFEFEF;
+  margin: 50px 65px 0 0;
+  width: 400px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+}
+.contacts-button:hover {
+  background-color: #C3FF76;
+  cursor: pointer;
+  color: #3322F5;
+  border: 2px solid #3322F5;
+}
+
+@media screen and (max-width: 1365px) {
+  .header {
+    padding: 0 0 25px 0;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .contacts-button {
+    width: 300px;
+    height: 40px;
+  }
+}
+
