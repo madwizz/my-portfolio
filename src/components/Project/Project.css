@@ -29,6 +29,7 @@
   margin: 0 auto;
   max-width: 560px;
   max-height: 63px;
+  text-align: center;
 }
 
 .project-info__link-button {
@@ -41,11 +42,11 @@
   justify-content: center;
   border: none;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 350;
   font-size: 24px;
   line-height: 24px;
-  letter-spacing: 0.15em;
-  margin: 0 auto 65px;
+  letter-spacing: 0.08em;
+  margin: 10px auto 65px;
 }
 .project-info__link-button:hover {
   background-color: #C3FF76;
@@ -74,5 +75,103 @@
   .project-image {
     border-left: none;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  
+  .project-info__title {
+    font-size: 38px;
+    max-width: 560px;
+  }
+  
+  .project-info__description {
+    font-size: 16px;
+    max-width: 460px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  
+  .project-info__title {
+    font-size: 38px;
+    max-width: 460px;
+  }
+  
+  .project-info__description {
+    font-size: 16px;
+    max-width: 360px;
+  }
+
+  .project-info__link-button {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  .project-info__title {
+    font-size: 32px;
+    max-width: 360px;
+  }
+
+  .project-info__description {
+    font-size: 16px;
+    max-width: 360px;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  .project-info__title {
+    line-height: 42px;
+  }
+
+  .project-info__title {
+    font-size: 32px;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  .project-info__description {
+    font-size: 16px;
+    max-width: 360px;
+  }
+}
+
+@media screen and (max-width: 407px) {
+  .project-info {
+    gap: 28px;
+  }
+
+  .project-info__description {
+    font-size: 14px;
+    max-width: 320px;
+    margin-bottom: 30px;
+  }
+
+  .project-info__link-button {
+    width: 200px;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media screen and (max-width: 364px) {
+
+  .project-info__description {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 344px) {
+
+  .project-info__title {
+    font-size: 30px;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  .project-info__description {
+    margin-bottom: 60px;
+    font-size: 13px;
   }
 }

@@ -8,6 +8,7 @@
   line-height: 24px;
   letter-spacing: 0.15em;
   padding: 0 0 100px 0;
+  align-items: center;
 }
 
 .menu {
@@ -31,7 +32,7 @@
   background-color: #302F2F;
   color: #EFEFEF;
   margin: 50px 65px 0 0;
-  width: 400px;
+  width: 350px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -41,7 +42,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
 }
 .contacts-button:hover {
   background-color: #C3FF76;
@@ -59,7 +60,34 @@
 @media screen and (max-width: 770px) {
   .contacts-button {
     width: 300px;
-    height: 40px;
   }
 }
 
+@media screen and (max-width: 686px) {
+  .contacts-button {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 547px) {
+  .header {
+    flex-direction: column;
+  }
+  .menu {
+    margin: 30px auto;
+  }
+  .contacts-button {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .contacts-button {
+    width: 200px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+  }
+}

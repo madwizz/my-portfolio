@@ -75,26 +75,43 @@
 
   .me-info {
     align-items: center;
+    text-align: center;
     gap: 16px;
-  }
-
-  .me-info__description {
-    display: block;
-    max-width: 800px;
-    max-height: 40px;
-  }
-
-  .me-info__tech {
-    display: block;
-    max-width: 500px;
-    max-height: 40px;
   }
 }
 
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 865px) {
+  .me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .me-photo {
+    max-width: 300px;
+    max-height: 400px;
+  }
+
+  .me-info {
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 366px) {
   .me-info__description {
-    display: block;
-    max-width: 400px;
-    max-height: 40px;
+    max-width: 300px;
+    max-height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .me-photo {
+    max-width: 250px;
+    max-height: 300px;
+  }
+
+  .me-info__tech {
+    max-width: 200px;
+    max-height: 60px;
   }
 }
