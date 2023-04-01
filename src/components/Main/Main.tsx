@@ -11,7 +11,7 @@ interface MainProps {
   cubeTexture: string;
 }
 
-const Main = ({ handleCubeClick, bgColor, cubeTexture }: MainProps) => {
+const Main: React.FC<MainProps> = ({ handleCubeClick, bgColor, cubeTexture }) => {
 
   return (
     <section className='main'>

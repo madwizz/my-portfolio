@@ -3,6 +3,36 @@
   flex-direction: row;
   border: 2px solid;
   font-style: normal;
+  transition: border-color 0.5s ease-in-out;
+}
+.project:hover {
+  border: 2px solid;
+  border-image: linear-gradient( to right, #C3FF76, #3322F5) 1;
+  border-image-slice: 1;
+  transition: border-image 1s ease-in-out;
+  animation: color-move 1s ease-out infinite;
+}
+@keyframes color-move {
+  0% {
+    border-image-source: linear-gradient( to right, #C3FF76, #3322F5);
+    border-color: #C3FF76;
+  }
+  25% {
+    border-image-source: linear-gradient( to right, #C3FF76, #5C3AFF);
+    border-color: #C3FF76;
+  }
+  50% {
+    border-image-source: linear-gradient( to right, #5C3AFF, #A86CFF);
+    border-color: #5C3AFF;
+  }
+  75% {
+    border-image-source: linear-gradient( to right, #A86CFF, #3322F5);
+    border-color: #A86CFF;
+  }
+  100% {
+    border-image-source: linear-gradient( to right, #3322F5, #C3FF76);
+    border-color: #3322F5;
+  }
 }
 
 .project-info {
@@ -30,6 +60,10 @@
   max-width: 560px;
   max-height: 63px;
   text-align: center;
+}
+
+.project-info__title:hover, .project-info__description:hover {
+  color: #3322F5;
 }
 
 .project-info__link-button {

@@ -6,6 +6,14 @@
 .me-photo {
   max-width: 400px;
   max-height: 400px;
+  border: solid 2px black;
+  transition: border-color 0.5s ease-in-out;
+}
+.me-photo:hover {
+  border: solid 2px #3322F5;
+  border-image: linear-gradient( to right, #C3FF76, #3322F5) 1;
+  border-image-slice: 1;
+  transition: border-image 1s ease-out;
 }
 
 .me-info {
@@ -17,25 +25,21 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  }
+}
 
-.me-info__name {
+.me-info__name, .me-info__location, .me-info__occupation {
   max-width: 400px;
   max-height: 40px;
 }
-
-.me-info__location {
-  max-width: 400px;
-  max-height: 40px;
-}
-
-.me-info__occupation {
-  max-width: 400px;
-  max-height: 40px;
+.me-info__name:hover, .me-info__location:hover, .me-info__occupation:hover {
+  color: #3322F5;
 }
 
 .me-info__description, .me-info__tech {
   display: none;
+}
+.me-info__description:hover, .me-info__tech:hover {
+  color: #3322F5;
 }
 
 @media screen and (max-width: 1365px) {
@@ -46,7 +50,7 @@
   }
 
   .me-info {
-      justify-content: space-around;
+    justify-content: space-around;
   }
   
   .me-info__description {

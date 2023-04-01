@@ -9,7 +9,7 @@ interface CubeCanvasProps {
   cubeTexture: string;
 }
 
-const CubeCanvas: React.FC<CubeCanvasProps> = ({ handleCubeClick, bgColor, cubeTexture }: CubeCanvasProps) => {
+const CubeCanvas: React.FC<CubeCanvasProps> = ({ handleCubeClick, cubeTexture }) => {
 
   const [canvasSize, setCanvasSize] = useState('450px');
 
@@ -34,9 +34,9 @@ const CubeCanvas: React.FC<CubeCanvasProps> = ({ handleCubeClick, bgColor, cubeT
 
   return (
     <Canvas style={{ width: canvasSize, height: '491px' }}>
-      {/* <ambientLight intensity={0.5} />
+      <ambientLight intensity={0.5} />
       <spotLight position={[10, 15, 10]} angle={0.3} />
-      <Cube cubeTexture={cubeTexture} onClick={handleCubeClick}/> */}
+      <Cube cubeTexture={cubeTexture} onClick={handleCubeClick}/>
     </Canvas>
   );
 }

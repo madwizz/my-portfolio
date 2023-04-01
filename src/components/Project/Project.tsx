@@ -1,3 +1,5 @@
+import React from 'react';
+
 import './Project.css'
 
 import CubeCanvas from '../CubeCanvas/CubeCanvas'
@@ -8,7 +10,7 @@ interface ProjectProps {
   cubeTexture: string;
 }
 
-const Project = ({ handleCubeClick, bgColor, cubeTexture }: ProjectProps) => {
+const Project: React.FC<ProjectProps> = ({ handleCubeClick, bgColor, cubeTexture }) => {
   return (
     <section className='project'>
       <div className='project-info'>
@@ -18,9 +20,9 @@ const Project = ({ handleCubeClick, bgColor, cubeTexture }: ProjectProps) => {
         </p>
         <button className='project-info__link-button'>Click to check it</button>
       </div>
-      <div className='project-image'>
+      {/* <div className='project-image'>
         <CubeCanvas handleCubeClick={handleCubeClick} bgColor={bgColor} cubeTexture={cubeTexture} />
-      </div>
+      </div> */}
     </section>
   )
 }

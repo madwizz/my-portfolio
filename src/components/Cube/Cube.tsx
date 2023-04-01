@@ -35,6 +35,8 @@ const Cube: React.FC<CubeProps> = ({ cubeTexture, onClick }) => {
     const handleCubeResize = () => {
       if (window.innerWidth <= 540) {
         setBoxSize([2, 2, 2]);
+      } else if (window.innerWidth <= 321) {
+        setBoxSize([1, 1, 1]);
       } else {
         setBoxSize([3, 3, 3]);
       }
